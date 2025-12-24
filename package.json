@@ -4,11 +4,12 @@
   "description": "Recipe application",
   "author": "bisma",
   "license": "ISC",
-  "scripts": {
-    "dev": "parcel index.html",
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
-  },
+ "scripts": {
+  "dev": "parcel src/index.html",
+  "start": "parcel src/index.html",
+  "build": "parcel build src/index.html"
+}
+,
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.1",
     "parcel": "^2.16.1",

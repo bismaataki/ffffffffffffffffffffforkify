@@ -213,9 +213,6 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import { async } from 'regenerator-runtime';
 
-// Parcel 2 icons import
-import icons from 'url:../img/icons.svg';
-
 const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
@@ -324,24 +321,7 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-// ========== ICONS DOM SETUP ==========
-const setButtonIcons = function () {
-  // Search button icon
-  const searchBtnIcon = document.querySelector('.search__icon use');
-  if (searchBtnIcon) searchBtnIcon.setAttribute('href', `${icons}#icon-search`);
-
-  // Add recipe button icon
-  const addRecipeIcon = document.querySelector('.nav__btn--add-recipe .nav__icon use');
-  if (addRecipeIcon) addRecipeIcon.setAttribute('href', `${icons}#icon-edit`);
-
-  // Bookmarks button icon
-  const bookmarkIcon = document.querySelector('.nav__btn--bookmarks .nav__icon use');
-  if (bookmarkIcon) bookmarkIcon.setAttribute('href', `${icons}#icon-bookmark`);
-};
-
-// ========== INIT ==========
 const init = function () {
-  setButtonIcons(); // Set icons for buttons
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
@@ -351,4 +331,3 @@ const init = function () {
   addRecipeView.addHandlerUpload(controlAddRecipe);
 };
 init();
-
