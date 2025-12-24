@@ -214,7 +214,7 @@ import 'regenerator-runtime/runtime';
 import { async } from 'regenerator-runtime';
 
 // Parcel 2 icons import
-import icons from 'url:../../img/icons.svg';
+import icons from 'url:../img/icons.svg';
 
 const controlRecipes = async function () {
   try {
