@@ -39,7 +39,16 @@ class AddRecipeView extends View {
     });
   }
 
-  _generateMarkup() {}
+  _generateMarkup() {
+    return `
+      <button class="btn upload__btn">
+        <svg>
+          <use href="${icons}#icon-upload-cloud"></use>
+        </svg>
+        <span>Upload</span>
+      </button>
+    `;
+  }
 }
 
 export default new AddRecipeView();
