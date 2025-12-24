@@ -1,3 +1,4 @@
+
 import View from './View.js';
 import previewView from './previewView.js';
 import icons from 'url:../../img/icons.svg'; // Parcel 2
@@ -13,3 +14,4 @@ class ResultsView extends View {
 }
 
 export default new ResultsView();
+
